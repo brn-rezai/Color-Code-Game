@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Code Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Color Code Game</h1>
+        <div class="status-bar">
+            <span>Remaining Guesses: <span id="remaining-guesses">10</span></span>
+            <span>Time Left: <span id="timer">5:00</span></span>
+        </div>
+        
+        <div class="color-selection">
+            <h2>Select Colors</h2>
+            <div class="colors" id="color-options">
+               
+            </div>
+            <div class="current-guess">
+                <h3>Your current guess:</h3>
+                <div id="current-guess"></div>
+                <button id="submit-guess">Submit Guess</button>
+            </div>
+        </div>
+
+        <div class="guess-history">
+            <h2>Your Guesses</h2>
+            <div id="guesses"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
