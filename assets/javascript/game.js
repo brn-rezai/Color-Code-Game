@@ -160,7 +160,6 @@ submitBtn.addEventListener("click", () => {
 });
 
 //
-//
 //Undo button:
 undoBtn.addEventListener("click", () => {
   if (currentGuess.length > 0) {
