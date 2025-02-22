@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/game1.css">
+    <title>game</title>
+</head>
+<body>
+
+    <div id="colorChoices">
+        <button class="color-btn" id="red"></button>
+        <button class="color-btn" id="yellow"></button>
+        <button class="color-btn" id="orange"></button>
+        <button class="color-btn" id="green"></button>
+        <button class="color-btn" id="purple"></button>
+        <button class="color-btn" id="blue"></button>
+    </div>
+
+    <div id="my-guess">
+
+    </div>
+
+    <input type="text" id="guessInput" placeholder="Enter your color guess">
+<button onclick="submitGuess()">Submit Guess</button>
+
+<div id="guessHistory">
+    <h3>Previous Guesses:</h3>
+</div>
+
+<button id="tryAgainBtn" style="display: none;">Try Again</button>
+
+
+
+    <script src="../assets/javascript/game.js"></script>
+    
+</body>
+</html>
