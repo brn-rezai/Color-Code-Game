@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-شscale=1.0" />
+    <title>Color Code Game</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- pg.1 -->
+
+    <div class="game-info">
+      <h2>Welcome to Color Code Game</h2>
+      <div>
+        <p class="user-info">Hello User (Score: 0)</p>
+      </div>
+
+      <p class="difficulty-title">Select Difficulty Level:</p>
+      <div class="difficulty-levels">
+        <select id="difficulty-select">
+          <option value="easy">Easy (6 colors)</option>
+          <option value="medium">Medium (8 colors)</option>
+          <option value="hard">Hard (10 colors)</option>
+        </select>
+
+        <button class="start-button">Start Game</button>
+      </div>
+
+      <!--  -->
+      <button class="view-leaderboard-button">View Leaderboard</button>
+    </div>
+
+    <!-- pg.2 -->
+    <div class="game-container">
+      <h2>Color Code Game</h2>
+
+      <div class="status-bar">
+        <span>Remaining Guesses: 10</span>
+        <span class="timer">Time Left: 0:30</span>
+
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <h3>Select Colors:</h3>
+      <div class="color-options">
+        <div class="color" style="background-color: yellow"></div>
+        <div class="color" style="background-color: orange"></div>
+        <div class="color" style="background-color: red"></div>
+        <div class="color" style="background-color: green"></div>
+        <div class="color" style="background-color: blue"></div>
+        <div class="color" style="background-color: purple"></div>
+      </div>
+
+      <div class="guess-box">
+        <p class="title-guess">Your Current Guesses:</p>
+        <div class="current-guess">
+          <!-- Selected colors will appear here -->
+        </div>
+
+        <div class="btns">
+          <button class="submit-button">Submit Guess</button>
+          <button class="undo-button">Undo</button>
+        </div>
+      </div>
+
+      <button class="back-button">Go Back</button>
+
+      <p>Your Guesses:</p>
+      <div class="previous-guesses">
+        <!-- Previous guesses and results will appear here -->
+      </div>
+    </div>
+    <script src="../assets/javascript/game.js"></script>
+  </body>
+</html>

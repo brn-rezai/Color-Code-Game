@@ -1,0 +1,302 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  color: rgb(51, 51, 51);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* pg. 1 */
+.game-info {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.user-info {
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.difficulty-title {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.difficulty-levels {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+select {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(241, 241, 241);
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.start-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.start-button:hover {
+  background-color: rgb(0, 86, 179);
+}
+
+.view-leaderboard-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: rgb(40, 167, 69);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.view-leaderboard-button:hover {
+  background-color: rgb(33, 136, 56);
+}
+
+/* pg. 2 */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.game-container {
+  display: none;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-bar {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 10px 15px;
+  margin: 50px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transition: width 1s linear;
+}
+
+.status-bar .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+}
+
+.status-bar .progress {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+  transition: width 1s linear;
+}
+
+.status-bar .remaining-guesses {
+  flex: 1;
+  text-align: left;
+}
+
+.status-bar .timer {
+  flex: 1;
+  text-align: right;
+}
+
+.timer.warning {
+  color: red;
+}
+
+.warning .progress {
+  background-color: red;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.color-options .color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-options .color:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.guess-box {
+  margin: 45px 0;
+  text-align: left;
+}
+
+.guess-box .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guess-box .current-guess {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.guess-box .current-guess .selected-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+}
+
+.guess-box .submit-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: rgb(40, 167, 69);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guess-box .submit-button:hover {
+  background-color: rgb(33, 136, 56);
+}
+
+.previous-guesses {
+  background-color: rgb(248, 249, 250);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.previous-guess {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.previous-guess .colors {
+  display: flex;
+  gap: 10px;
+}
+
+.previous-guess .colors .color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.previous-guess .result {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.back-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: rgb(220, 53, 69);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.undo-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: rgb(255, 165, 0);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.undo-button:hover {
+  background-color: rgb(255, 140, 0);
+}
