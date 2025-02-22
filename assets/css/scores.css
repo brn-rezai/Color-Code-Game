@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Leaderboard {
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+}
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.scores {
+  height: 80vh;
+  width: 80%;
+  background-color: white;
+  margin: 50px;
+  border-radius: 15px;
+  box-shadow: inset;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: rgb(40, 167, 69);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  text-align: left;
+}
+button:hover {
+  background-color: rgb(33, 136, 56);
+}
+.score-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+}
+.home-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 230px;
+}
+th {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+table {
+  width: 70%;
+  height: 60vh;
+  position: absolute;
+  top: 110px;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+}
+.name {
+  width: 60%;
+}
+.score {
+  width: 40%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
