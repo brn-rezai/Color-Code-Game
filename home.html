@@ -18,8 +18,8 @@
         </div>
 
         <div id="auth-links">
-            <button onclick href="./pages/signin.html">Sign In</button>
-            <button onclick href="./pages/signup.html">Sign Up</button>
+            <button onclick="location.href='./pages/signin.html'">Sign In</button>
+            <button onclick="location.href='./pages/signup.html'">Sign Up</button>
         </div>
 
         <div class="game-setup">
@@ -32,7 +32,9 @@
             <button id="start-game-btn" disabled>Play</button>
         </div>
 
-        <button class="view-leaderboard-button">View Leaderboard</button>
+        <button class="view-leaderboard-button" onclick="location.href='./pages/scores.html'">
+            View Leaderboard
+        </button>
     </div>
 
     <script src="home.js"></script>
