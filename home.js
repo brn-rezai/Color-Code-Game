@@ -22,10 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     startGameBtn.addEventListener("click", function () {
         if (!user) {
             alert("Please sign in before starting the game.");
-            window.location.href = "signin.html";
+            window.location.href ="./pages/signin.html";
             return;
         }
-        
         const difficulty = document.getElementById("difficulty-select").value;
         localStorage.setItem("gameDifficulty", difficulty);
         window.location.href = "game.html";
