@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const authLinks = document.getElementById("auth-links");
     const startGameBtn = document.getElementById("start-game-btn");
 
-    if (user) {
-        document.getElementById("username").textContent = user.username;
-        document.getElementById("score").textContent = user.score || 0;
-        userInfo.style.display = "block";
-        authLinks.style.display = "none";
-        startGameBtn.removeAttribute("disabled"); 
-    } else {
-        startGameBtn.setAttribute("disabled", "true"); 
-    }
+    // if (user) {
+    //     document.getElementById("username").textContent = user.username;
+    //     document.getElementById("score").textContent = user.score || 0;
+    //     userInfo.style.display = "block";
+    //     authLinks.style.display = "none";
+    //     startGameBtn.removeAttribute("disabled"); 
+    // } else {
+    //     startGameBtn.setAttribute("disabled", "true"); 
+    // }
 
 
     startGameBtn.addEventListener("click", function () {
