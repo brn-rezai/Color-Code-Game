@@ -14,19 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
         startGameBtn.setAttribute("disabled", "true"); 
     }
 
-    document.getElementById("logout-btn").addEventListener("click", function () {
-        localStorage.removeItem("user");
-        window.location.reload();
-    });
 
     startGameBtn.addEventListener("click", function () {
         if (!user) {
             alert("Please sign in before starting the game.");
-            window.location.href ="./pages/signin.html";
+            window.location.href ="./signin.html";
             return;
         }
         const difficulty = document.getElementById("difficulty-select").value;
         localStorage.setItem("gameDifficulty", difficulty);
-        window.location.href = "game.html";
+        window.location.href = "./game.html";
     });
 });
