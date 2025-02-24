@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       );
       let users = await response.json();
 
-      return users.filter((user) => user.id !== undefined);
+      return users.filter((user) => user.score !== undefined);
     } catch (error) {
       console.error("error:", error);
       return [];
