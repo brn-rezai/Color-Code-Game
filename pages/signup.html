@@ -8,11 +8,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>sign up</h1>
+      <h1>Sign Up</h1>
       <form id="signupForm">
-        <input type="text" id="username" placeholder="username" required />
-        <input type="password" id="password" placeholder="password" required />
-        <button type="submit">submit</button>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Confirm Password"
+          required
+        />
+        <button type="submit">Sign Up</button>
+        <div class="form-links">
+          <p>Already have an account?</p>
+          <a href="#" id="click">Sign In</a>
+        </div>
       </form>
       <p id="message"></p>
     </div>
