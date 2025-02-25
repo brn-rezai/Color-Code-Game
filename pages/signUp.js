@@ -3,40 +3,40 @@ const form = document.getElementById("signupForm");
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
-  const username = document.getElementById("username").value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-
-  await signUp(username, password);
+  const cPass = document.getElementById("confPassword").value;
 });
 
-async function signUp(username, password) {
-  try {
-    const response = await fetch(
-      "https://67b57c8fa9acbdb38ed28d18.mockapi.io/api/b1/users",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: username,
-          password: password,
-        }),
-      }
-    );
+if (password !== confirmPassword) {
+  alert("The passwoid is not correct! try again.");
+  return;
+}
 
-    if (!response.ok) {
-      throw new Error("Try again please!");
+try {
+  const response = await fetch(
+    "https://67b57c8fa9acbdb38ed28d18.mockapi.io/api/b1/users",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        password: password,
+      }),
     }
+  );
 
-    const data = await response.json();
-    document.getElementById("message").innerText = "Well done!";
-
-    // console.log(data);
-
-    document.getElementById("username").value = "";
-    document.getElementById("password").value = "";
-  } catch (error) {
-    document.getElementById("message").innerText = error.message;
+  if (!response.ok) {
+    throw new Error("Try again please!");
   }
+
+  const data = await response.json();
+  console.log("Login successful:", data);
+} catch (error) {
+  console.error("error:", error);
+  alert("Try again please!");
 }
