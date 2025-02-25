@@ -38,6 +38,22 @@ button:hover {
   background-color: darkgreen;
 }
 
+.form-links {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+#click {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+#click:hover {
+  text-decoration: underline;
+}
+
 #message {
   margin-top: 10px;
   color: red;
